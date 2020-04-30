@@ -30,23 +30,22 @@ public class CheckForItem : MonoBehaviour
                 if (hit.transform.tag == "ManipulationObject")
                 {
                     txt_PickUpText.enabled = true;
-                    //hit.transform.SendMessage("HighlightItem");
                     lastObject = hit.transform.gameObject;
-                    if (Input.GetMouseButtonDown(0))
+                    if (Input.GetKeyDown(KeyCode.F))
                     {
-                        lastObject.GetComponent<Rigidbody>().isKinematic = true;
-                        lastObject.transform.position = go_ItemHolder.transform.position;
-                        lastObject.transform.rotation = go_ItemHolder.transform.rotation;
+                        go_ItemHolder.transform.position = lastObject.transform.position;
+                        go_ItemHolder.transform.rotation = lastObject.transform.rotation;
+                        lastObject.SendMessage("Disable");
+                        lastObject.GetComponent<Rigidbody>().velocity = Vector3.zero;
+                        lastObject.GetComponent<Rigidbody>().angularVelocity= Vector3.zero;
                         lastObject.transform.parent = go_ItemHolder.transform;
                         b_HoldingItem = true;
-                        //lastObject.SendMessage("DehighlightItem");
                         txt_PickUpText.enabled = false;
                     }
                 }
                 else if (lastObject != null)
                 {
                     txt_PickUpText.enabled = false;
-                    //lastObject.SendMessage("DehighlightItem");
                 }
                 else
                 {
@@ -56,7 +55,6 @@ public class CheckForItem : MonoBehaviour
             else if (lastObject != null)
             {
                 txt_PickUpText.enabled = false;
-                //lastObject.SendMessage("DehighlightItem");
             }
             else
             {
@@ -65,15 +63,27 @@ public class CheckForItem : MonoBehaviour
         }
         else
         {
+            lastObject.GetComponent<Rigidbody>().velocity = Vector3.zero;
+            lastObject.GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
             if (lastObject != null)
             {
                 txt_PickUpText.enabled = false;
-                if (Input.GetMouseButtonDown(0))
+                Physics.Raycast(ray, out hit, 999f);
+                if (Input.GetKeyDown(KeyCode.F) || hit.transform.gameObject != lastObject)
                 {
-                    lastObject.GetComponent<Rigidbody>().isKinematic = false;
+                    lastObject.SendMessage("Enable");
                     lastObject.transform.parent = null;
                     b_HoldingItem = false;
                 }
+            }
+            if(Input.GetMouseButtonDown(0))
+            {
+                float dist = Vector3.Distance(transform.position, go_ItemHolder.transform.position);
+                lastObject.SendMessage("Enable");
+                lastObject.transform.parent = null;
+                lastObject.GetComponent<Rigidbody>().AddForce(camera.transform.forward * (30f-dist*1.5f), ForceMode.Impulse);
+                b_HoldingItem = false;
+                Debug.Log("Shoot" + dist);
             }
         }
     }
