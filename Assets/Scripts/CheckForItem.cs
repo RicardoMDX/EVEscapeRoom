@@ -16,6 +16,7 @@ public class CheckForItem : MonoBehaviour
     void Start()
     {
         camera = GetComponentInChildren<Camera>();
+        txt_PickUpText = GameObject.FindObjectOfType<Canvas>().GetComponentInChildren<Text>();
     }
 
     // Update is called once per frame
@@ -25,7 +26,7 @@ public class CheckForItem : MonoBehaviour
         Ray ray = camera.ScreenPointToRay(Input.mousePosition);
         if (!b_HoldingItem)
         {
-            if (Physics.Raycast(ray, out hit, 999f))
+            if (Physics.Raycast(ray, out hit, 6f))
             {
                 if (hit.transform.tag == "ManipulationObject")
                 {
@@ -68,7 +69,7 @@ public class CheckForItem : MonoBehaviour
             if (lastObject != null)
             {
                 txt_PickUpText.enabled = false;
-                Physics.Raycast(ray, out hit, 999f);
+                Physics.Raycast(ray, out hit, 6f);
                 if (Input.GetKeyDown(KeyCode.F) || hit.transform.gameObject != lastObject)
                 {
                     lastObject.SendMessage("Enable");
@@ -81,7 +82,7 @@ public class CheckForItem : MonoBehaviour
                 float dist = Vector3.Distance(transform.position, go_ItemHolder.transform.position);
                 lastObject.SendMessage("Enable");
                 lastObject.transform.parent = null;
-                lastObject.GetComponent<Rigidbody>().AddForce(camera.transform.forward * (30f-dist*1.5f), ForceMode.Impulse);
+                lastObject.GetComponent<Rigidbody>().AddForce(camera.transform.forward * (20f-dist*1.5f), ForceMode.Impulse);
                 b_HoldingItem = false;
                 Debug.Log("Shoot" + dist);
             }

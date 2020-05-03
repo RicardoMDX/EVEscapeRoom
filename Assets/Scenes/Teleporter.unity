@@ -1839,6 +1839,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: eve
       objectReference: {fileID: 0}
+    - target: {fileID: 100012, guid: 7de69e81c48e8e144a740bd629f95863, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100014, guid: 7de69e81c48e8e144a740bd629f95863, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100016, guid: 7de69e81c48e8e144a740bd629f95863, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 100004, guid: 7de69e81c48e8e144a740bd629f95863, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -1852,18 +1864,6 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 100010, guid: 7de69e81c48e8e144a740bd629f95863, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 100012, guid: 7de69e81c48e8e144a740bd629f95863, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 100014, guid: 7de69e81c48e8e144a740bd629f95863, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 100016, guid: 7de69e81c48e8e144a740bd629f95863, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
@@ -5305,6 +5305,18 @@ PrefabInstance:
     - target: {fileID: 5045755453251180199, guid: 47aa9fc8531f7d94dbc248783d886130,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 80066657, guid: 47aa9fc8531f7d94dbc248783d886130, type: 3}
+      propertyPath: m_SpotAngle
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 80066657, guid: 47aa9fc8531f7d94dbc248783d886130, type: 3}
+      propertyPath: m_Intensity
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 80066657, guid: 47aa9fc8531f7d94dbc248783d886130, type: 3}
+      propertyPath: m_DrawHalo
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

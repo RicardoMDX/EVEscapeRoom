@@ -809,12 +809,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &480126277 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5045755452265499472, guid: 47aa9fc8531f7d94dbc248783d886130,
-    type: 3}
-  m_PrefabInstance: {fileID: 5045755452254111119}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &539023132
 GameObject:
   m_ObjectHideFlags: 0
@@ -1780,64 +1774,6 @@ Mesh:
     offset: 0
     size: 0
     path: 
---- !u!1 &1301909256 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5045755453250816647, guid: 47aa9fc8531f7d94dbc248783d886130,
-    type: 3}
-  m_PrefabInstance: {fileID: 5045755452254111119}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1301909257
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1301909256}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: abc8fb4dc864bd442955b3231461f80b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1301909258
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1301909256}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b6f8381412308324ebd88e48def4c1f7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  go_ItemHolder: {fileID: 480126277}
-  txt_PickUpText: {fileID: 938575151}
---- !u!114 &1301909265
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1301909256}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 31da93e7535e3a642b49489ae3fe9636, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!136 &1301909266
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1301909256}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!43 &1339889341
 Mesh:
   m_ObjectHideFlags: 0
@@ -4082,61 +4018,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5045755453245308783, guid: 47aa9fc8531f7d94dbc248783d886130,
-        type: 3}
-      propertyPath: sensitivityX
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 5045755453245308783, guid: 47aa9fc8531f7d94dbc248783d886130,
-        type: 3}
-      propertyPath: sensitivityY
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 5045755453245308783, guid: 47aa9fc8531f7d94dbc248783d886130,
-        type: 3}
-      propertyPath: framesOfSmoothing
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5045755453111952022, guid: 47aa9fc8531f7d94dbc248783d886130,
-        type: 3}
-      propertyPath: m_IsKinematic
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5045755453111952022, guid: 47aa9fc8531f7d94dbc248783d886130,
-        type: 3}
-      propertyPath: m_Mass
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5045755453111952022, guid: 47aa9fc8531f7d94dbc248783d886130,
-        type: 3}
-      propertyPath: m_AngularDrag
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5045755453245308779, guid: 47aa9fc8531f7d94dbc248783d886130,
-        type: 3}
-      propertyPath: antiBunnyHopFactor
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5045755453245308779, guid: 47aa9fc8531f7d94dbc248783d886130,
-        type: 3}
-      propertyPath: jumpSpeed
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 5045755453252716709, guid: 47aa9fc8531f7d94dbc248783d886130,
-        type: 3}
-      propertyPath: field of view
-      value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: 5045755453252716709, guid: 47aa9fc8531f7d94dbc248783d886130,
-        type: 3}
-      propertyPath: m_projectionMatrixMode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5045755453252716709, guid: 47aa9fc8531f7d94dbc248783d886130,
-        type: 3}
-      propertyPath: near clip plane
-      value: 0.01
-      objectReference: {fileID: 0}
+    - target: {fileID: 1301909258, guid: 47aa9fc8531f7d94dbc248783d886130, type: 3}
+      propertyPath: txt_PickUpText
+      value: 
+      objectReference: {fileID: 938575151}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47aa9fc8531f7d94dbc248783d886130, type: 3}
 --- !u!1001 &7726677369657523004

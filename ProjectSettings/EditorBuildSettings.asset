@@ -11,4 +11,19 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Teleporter.unity
     guid: 8db9c79e9144649418cf38493caff870
+  - enabled: 1
+    path: Assets/Scenes/Level1.unity
+    guid: b4a1605955810aa4e82df4097eaade7f
+  - enabled: 1
+    path: Assets/Scenes/Level2.unity
+    guid: 8ac50f8048335354091ae5b4e3fdf640
+  - enabled: 1
+    path: Assets/Scenes/EscapePods.unity
+    guid: 9be1ecf05f4118643a3b1f29da0458af
+  - enabled: 1
+    path: Assets/Scenes/Level3.unity
+    guid: 4a06bd6abb7b16049b23661ac2105a28
+  - enabled: 1
+    path: Assets/Scenes/Level4.unity
+    guid: 475ef8f7de62a5d47ad4e624e254071b
   m_configObjects: {}
