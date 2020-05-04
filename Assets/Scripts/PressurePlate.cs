@@ -5,6 +5,7 @@ using UnityEngine;
 public class PressurePlate : MonoBehaviour
 {
     public Level3Manager lvl3Manager;
+    public Level5Manager lvl5Manager;
     public int i_Level;
     public GameObject go_Destroy;
 
@@ -36,6 +37,12 @@ public class PressurePlate : MonoBehaviour
         {
             GameObject.Destroy(go_Destroy);
         }
+        if (i_Level == 5)
+        {
+            if(go_Destroy!=null)
+            GameObject.Destroy(go_Destroy);
+            lvl5Manager.i_PressurePlates++;
+        }
     }
 
     private void OnTriggerExit(Collider other)
@@ -47,6 +54,10 @@ public class PressurePlate : MonoBehaviour
         if (i_Level == 3)
         {
             lvl3Manager.i_PressurePlates--;
+        }
+        if (i_Level == 5)
+        {
+            lvl5Manager.i_PressurePlates--;
         }
     }
 }

@@ -18,12 +18,18 @@ EditorBuildSettings:
     path: Assets/Scenes/Level2.unity
     guid: 8ac50f8048335354091ae5b4e3fdf640
   - enabled: 1
-    path: Assets/Scenes/EscapePods.unity
-    guid: 9be1ecf05f4118643a3b1f29da0458af
-  - enabled: 1
     path: Assets/Scenes/Level3.unity
     guid: 4a06bd6abb7b16049b23661ac2105a28
   - enabled: 1
+    path: Assets/Scenes/EscapePods.unity
+    guid: 9be1ecf05f4118643a3b1f29da0458af
+  - enabled: 1
     path: Assets/Scenes/Level4.unity
     guid: 475ef8f7de62a5d47ad4e624e254071b
+  - enabled: 1
+    path: Assets/Scenes/Level5.unity
+    guid: 289766ffdd9df0f4c87a3123ad170a7c
+  - enabled: 1
+    path: Assets/Scenes/Level6.unity
+    guid: aa3bcc56891e3e441b2ca478eb346014
   m_configObjects: {}

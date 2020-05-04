@@ -928,5 +928,27 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5637443475959945799, guid: 7f99c51744a726141a68e586bce0c074,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5637443477216002427, guid: 7f99c51744a726141a68e586bce0c074,
+        type: 3}
+      propertyPath: m_Text
+      value: 'Gravity controls restored
+
+        Control gravity using 1-6
+
+
+        Restore power to the main
+
+        teleporter by collecting
+
+        batteries
+
+
+        Self-destruction in 10 minutes!'
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f99c51744a726141a68e586bce0c074, type: 3}

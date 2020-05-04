@@ -9988,6 +9988,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lvl3Manager: {fileID: 1078274909}
+  lvl5Manager: {fileID: 0}
   i_Level: 3
   go_Destroy: {fileID: 0}
 --- !u!64 &750790511
@@ -10415,6 +10416,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lvl3Manager: {fileID: 1078274909}
+  lvl5Manager: {fileID: 0}
   i_Level: 3
   go_Destroy: {fileID: 0}
 --- !u!64 &759099957
